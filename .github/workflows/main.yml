@@ -4,6 +4,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: List directory contents
+        run: ls -R /home/runner/work/podcast-test/podcast-test
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Setup Python
